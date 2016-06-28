@@ -9,6 +9,14 @@ import android.view.ViewGroup
 
 class ${className}Fragment : Fragment(), ${className}View {
 
+    companion object {
+        const val TAG = "${className}Fragment"
+
+        fun newInstance(): ${className}Fragment {
+            return ${className}Fragment()
+        }
+    }
+
     private lateinit var presenter: ${className}Presenter
     private lateinit var rootView: ViewGroup
 
